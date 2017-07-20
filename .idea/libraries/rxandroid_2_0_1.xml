@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="rxandroid-2.0.1">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.1.aar/150b417793457b9892fcfd0b68b2ebc9/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.1.aar/150b417793457b9892fcfd0b68b2ebc9/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.1.aar/680a76061ae1ff0245f75b14987500ca/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.1.aar/680a76061ae1ff0245f75b14987500ca/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

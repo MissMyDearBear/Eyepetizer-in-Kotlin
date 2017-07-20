@@ -4,8 +4,6 @@ import android.graphics.Typeface
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentManager
-import android.util.Log
 import android.view.KeyEvent
 import android.view.View
 import android.widget.Toast
@@ -24,7 +22,7 @@ import java.util.*
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     var homeFragment: HomeFragment? = null
     var findFragment: FindFragment? = null
-    var hotFragemnt: HotFragment? = null
+    var hotFragment: HotFragment? = null
     var mineFragment: MineFragment? = null
     var mExitTime: Long = 0
     var toast: Toast? = null
@@ -78,7 +76,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     findFragment = item
                 }
                 if (item is HotFragment) {
-                    hotFragemnt = item
+                    hotFragment = item
                 }
                 if (item is MineFragment) {
                     mineFragment = item
@@ -88,18 +86,18 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             homeFragment = HomeFragment()
             findFragment = FindFragment()
             mineFragment = MineFragment()
-            hotFragemnt = HotFragment()
+            hotFragment = HotFragment()
             val fragmentTrans = supportFragmentManager.beginTransaction()
             fragmentTrans.add(R.id.fl_content, homeFragment)
             fragmentTrans.add(R.id.fl_content, findFragment)
             fragmentTrans.add(R.id.fl_content, mineFragment)
-            fragmentTrans.add(R.id.fl_content, hotFragemnt)
+            fragmentTrans.add(R.id.fl_content, hotFragment)
             fragmentTrans.commit()
         }
         supportFragmentManager.beginTransaction().show(homeFragment)
                 .hide(findFragment)
                 .hide(mineFragment)
-                .hide(hotFragemnt)
+                .hide(hotFragment)
                 .commit()
     }
 
@@ -121,7 +119,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 supportFragmentManager.beginTransaction().show(findFragment)
                         .hide(homeFragment)
                         .hide(mineFragment)
-                        .hide(hotFragemnt)
+                        .hide(hotFragment)
                         .commit()
                 tv_bar_title.text = "Discover"
                 tv_bar_title.visibility = View.VISIBLE
@@ -133,7 +131,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 supportFragmentManager.beginTransaction().show(homeFragment)
                         .hide(findFragment)
                         .hide(mineFragment)
-                        .hide(hotFragemnt)
+                        .hide(hotFragment)
                         .commit()
                 tv_bar_title.text = getToday()
                 tv_bar_title.visibility = View.VISIBLE
@@ -142,7 +140,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.rb_hot -> {
                 rb_hot.isChecked = true
                 rb_hot.setTextColor(resources.getColor(R.color.black))
-                supportFragmentManager.beginTransaction().show(hotFragemnt)
+                supportFragmentManager.beginTransaction().show(hotFragment)
                         .hide(findFragment)
                         .hide(mineFragment)
                         .hide(homeFragment)
@@ -157,7 +155,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 supportFragmentManager.beginTransaction().show(mineFragment)
                         .hide(findFragment)
                         .hide(homeFragment)
-                        .hide(hotFragemnt)
+                        .hide(hotFragment)
                         .commit()
                 tv_bar_title.visibility = View.INVISIBLE
                 iv_search.setImageResource(R.drawable.icon_setting)
