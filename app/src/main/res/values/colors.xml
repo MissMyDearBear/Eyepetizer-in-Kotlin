@@ -9,4 +9,5 @@
     <color name="divider">#e6e6e6</color>
     <color name="transparent">#0000</color>
     <color name="textbg">#8F9AA8</color>
+    <color name="transparent_status_bar">#10000000</color>
 </resources>

@@ -4,15 +4,12 @@ import android.os.AsyncTask
 import android.os.Bundle
 import android.os.Handler
 import android.os.Message
-import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
-import android.util.Log
 import android.view.View
 import com.gyf.barlibrary.ImmersionBar
 import com.tt.lvruheng.eyepetizer.R
-import com.tt.lvruheng.eyepetizer.adapter.FeedAdapter
 import com.tt.lvruheng.eyepetizer.adapter.WatchAdapter
-import com.tt.lvruheng.eyepetizer.mvp.model.bean.HotBean
+import com.tt.lvruheng.eyepetizer.base.BaseActivity
 import com.tt.lvruheng.eyepetizer.mvp.model.bean.VideoBean
 import com.tt.lvruheng.eyepetizer.utils.ObjectSaveUtils
 import com.tt.lvruheng.eyepetizer.utils.SPUtils
@@ -21,7 +18,7 @@ import kotlinx.android.synthetic.main.activity_watch.*
 /**
  * Created by lvruheng on 2017/7/11.
  */
-class WatchActivity : AppCompatActivity() {
+class WatchActivity : BaseActivity() {
     var mList = ArrayList<VideoBean>()
     lateinit var mAdapter: WatchAdapter
     var mHandler: Handler = object : Handler() {

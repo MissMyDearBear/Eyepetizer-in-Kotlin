@@ -2,23 +2,20 @@ package com.tt.lvruheng.eyepetizer.ui
 
 import android.graphics.Typeface
 import android.os.Bundle
-import android.os.PersistableBundle
-import android.support.v7.app.AppCompatActivity
 import android.view.WindowManager
 import android.view.animation.AlphaAnimation
 import android.view.animation.Animation
 import android.view.animation.AnimationSet
 import android.view.animation.ScaleAnimation
-import android.widget.ImageView
-import android.widget.TextView
 import com.tt.lvruheng.eyepetizer.R
+import com.tt.lvruheng.eyepetizer.base.BaseActivity
 import com.tt.lvruheng.eyepetizer.utils.newIntent
 import kotlinx.android.synthetic.main.activity_splash.*
 
 /**
  * Created by lvruheng on 2017/7/2.
  */
-class SplashActivity : AppCompatActivity() {
+class SplashActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //设置全屏

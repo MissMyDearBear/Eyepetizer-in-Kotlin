@@ -1,15 +1,15 @@
 package com.tt.lvruheng.eyepetizer.ui
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import com.gyf.barlibrary.ImmersionBar
 import com.tt.lvruheng.eyepetizer.R
+import com.tt.lvruheng.eyepetizer.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_advise.*
 
 /**
  * Created by lvruheng on 2017/7/11.
  */
-class AdviseActivity:AppCompatActivity(){
+class AdviseActivity:BaseActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_advise)

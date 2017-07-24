@@ -5,12 +5,12 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Message
 import android.support.v7.app.AlertDialog
-import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.view.View
 import com.gyf.barlibrary.ImmersionBar
 import com.tt.lvruheng.eyepetizer.R
 import com.tt.lvruheng.eyepetizer.adapter.DownloadAdapter
+import com.tt.lvruheng.eyepetizer.base.BaseActivity
 import com.tt.lvruheng.eyepetizer.mvp.model.bean.VideoBean
 import com.tt.lvruheng.eyepetizer.utils.ObjectSaveUtils
 import com.tt.lvruheng.eyepetizer.utils.SPUtils
@@ -20,7 +20,7 @@ import zlc.season.rxdownload2.RxDownload
 /**
  * Created by lvruheng on 2017/7/12.
  */
-class CacheActivity : AppCompatActivity() {
+class CacheActivity : BaseActivity() {
     var mList = ArrayList<VideoBean>()
     lateinit var mAdapter: DownloadAdapter
     var mHandler: Handler = object : Handler() {

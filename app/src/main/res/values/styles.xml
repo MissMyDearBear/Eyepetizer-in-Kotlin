@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
@@ -8,6 +8,8 @@
 
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="android:fitsSystemWindows">true</item>
         <item name="colorPrimary">@color/white</item>
         <item name="colorPrimaryDark">@color/white</item>
         <item name="colorAccent">@color/colorAccent</item>

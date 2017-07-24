@@ -25,17 +25,17 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ui.MainActivity"></activity>
+        <activity android:name=".ui.MainActivity"/>
         <activity
             android:name=".ui.VideoDetailActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait"
-            android:theme="@style/Video"></activity>
-        <activity android:name=".ui.FindDetailActivity"></activity>
-        <activity android:name=".ui.ResultActivity"></activity>
-        <activity android:name=".ui.WatchActivity"></activity>
-        <activity android:name=".ui.AdviseActivity"></activity>
-        <activity android:name=".ui.CacheActivity"></activity>
+            android:theme="@style/Video"/>
+        <activity android:name=".ui.FindDetailActivity"/>
+        <activity android:name=".ui.ResultActivity"/>
+        <activity android:name=".ui.WatchActivity"/>
+        <activity android:name=".ui.AdviseActivity"/>
+        <activity android:name=".ui.CacheActivity"/>
     </application>
 
 </manifest>

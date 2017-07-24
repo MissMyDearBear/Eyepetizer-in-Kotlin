@@ -2,12 +2,12 @@ package com.tt.lvruheng.eyepetizer.ui
 
 import android.os.Bundle
 import android.support.v4.widget.SwipeRefreshLayout
-import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import com.gyf.barlibrary.ImmersionBar
 import com.tt.lvruheng.eyepetizer.R
 import com.tt.lvruheng.eyepetizer.adapter.RankAdapter
+import com.tt.lvruheng.eyepetizer.base.BaseActivity
 import com.tt.lvruheng.eyepetizer.mvp.contract.FindDetailContract
 import com.tt.lvruheng.eyepetizer.mvp.model.bean.HotBean
 import com.tt.lvruheng.eyepetizer.mvp.presenter.FindDetailPresenter
@@ -17,7 +17,7 @@ import java.util.regex.Pattern
 /**
  * Created by lvruheng on 2017/7/8.
  */
-class FindDetailActivity : AppCompatActivity(), FindDetailContract.View, SwipeRefreshLayout.OnRefreshListener {
+class FindDetailActivity : BaseActivity(), FindDetailContract.View, SwipeRefreshLayout.OnRefreshListener {
 
     lateinit var mPresenter: FindDetailPresenter
     lateinit var mAdapter: RankAdapter

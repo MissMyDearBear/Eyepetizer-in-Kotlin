@@ -2,23 +2,21 @@ package com.tt.lvruheng.eyepetizer.ui
 
 import android.os.Bundle
 import android.support.v4.widget.SwipeRefreshLayout
-import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
-import android.util.Log
 import com.gyf.barlibrary.ImmersionBar
 import com.tt.lvruheng.eyepetizer.R
 import com.tt.lvruheng.eyepetizer.adapter.FeedAdapter
+import com.tt.lvruheng.eyepetizer.base.BaseActivity
 import com.tt.lvruheng.eyepetizer.mvp.contract.ResultContract
 import com.tt.lvruheng.eyepetizer.mvp.model.bean.HotBean
 import com.tt.lvruheng.eyepetizer.mvp.presenter.ResultPresenter
 import kotlinx.android.synthetic.main.activity_find_detail.*
-import kotlin.collections.ArrayList
 
 /**
  * Created by lvruheng on 2017/7/11.
  */
-class ResultActivity : AppCompatActivity(), ResultContract.View, SwipeRefreshLayout.OnRefreshListener {
+class ResultActivity : BaseActivity(), ResultContract.View, SwipeRefreshLayout.OnRefreshListener {
     lateinit var keyWord: String
     lateinit var mPresenter: ResultPresenter
     lateinit var mAdapter: FeedAdapter

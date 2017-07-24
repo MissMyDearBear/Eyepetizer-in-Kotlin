@@ -3,35 +3,34 @@ package com.tt.lvruheng.eyepetizer.ui
 import android.content.Context
 import android.content.pm.ActivityInfo
 import android.content.res.Configuration
-import android.graphics.Typeface
-import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import com.tt.lvruheng.eyepetizer.R
-import com.tt.lvruheng.eyepetizer.mvp.model.bean.VideoBean
-import kotlinx.android.synthetic.main.activity_video_detail.*
 import android.graphics.BitmapFactory
-import com.bumptech.glide.Glide
+import android.graphics.Typeface
 import android.os.AsyncTask
+import android.os.Bundle
 import android.os.Handler
 import android.os.Message
 import android.util.Log
 import android.view.View
 import android.widget.ImageView
+import com.bumptech.glide.Glide
 import com.shuyu.gsyvideoplayer.GSYVideoPlayer
 import com.shuyu.gsyvideoplayer.utils.OrientationUtils
 import com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer
+import com.tt.lvruheng.eyepetizer.R
+import com.tt.lvruheng.eyepetizer.base.BaseActivity
+import com.tt.lvruheng.eyepetizer.mvp.model.bean.VideoBean
 import com.tt.lvruheng.eyepetizer.utils.*
+import kotlinx.android.synthetic.main.activity_video_detail.*
 import zlc.season.rxdownload2.RxDownload
 import java.io.FileInputStream
 import java.io.FileNotFoundException
-import java.net.URI
 import java.util.concurrent.ExecutionException
 
 
 /**
  * Created by lvruheng on 2017/7/7.
  */
-class VideoDetailActivity : AppCompatActivity() {
+class VideoDetailActivity : BaseActivity() {
     companion object {
         var MSG_IMAGE_LOADED = 101
     }
